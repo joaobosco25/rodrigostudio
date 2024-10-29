@@ -9,9 +9,6 @@
 
 # Rodrigo Ferreira Studio
 
-<!-- Imagem de Perfil -->
-![Rodrigo Ferreira](./assids/freepik__candid-image-photography-natural-textures-highly-r__6440.jpeg)
-
 <!-- Badge de Licença -->
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -37,8 +34,8 @@ Bem-vindo ao **Rodrigo Ferreira Studio**! Este projeto apresenta o estúdio de b
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu_usuario/seu_repositorio.git
-   cd seu_repositorio
+   git clone https://github.com/joaobosco25/rodrigostudio.git
+   cd rodrigostudio
 
 ## Contato
 
