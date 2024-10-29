@@ -16,6 +16,10 @@
 
 Bem-vindo ao **Rodrigo Ferreira Studio**! Este projeto apresenta o estúdio de beleza especializado em transformar a aparência dos clientes todos os dias. Através deste site, os clientes podem conhecer mais sobre os serviços oferecidos e agendar atendimentos diretamente pelo WhatsApp.
 
+## Link do site
+
+https://joaobosco25.github.io/rodrigostudio/
+
 ## Funcionalidades
 
 - **Página Inicial:** Uma visão geral do estúdio e dos principais serviços.
