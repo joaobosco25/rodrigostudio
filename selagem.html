@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Inclua seu CSS -->
+    <title>Selagem</title>
+    <style>
+        body {
+            background-image: url('./assids/selagem\ \(1\).jpeg'); /* Insira o caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            color: #fffdfd;
+            font-family: 'Darker Grotesque', sans-serif; /* Ajuste a fonte como preferir */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center; /* Centraliza o texto por padrão */
+        }
+        header {
+            background: rgba(0, 0, 0, 0.308); /* Fundo semi-transparente para o cabeçalho */
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.404); /* Fundo semi-transparente para o conteúdo */
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centraliza o texto dentro do contêiner */
+        }
+        h2, h3 {
+            text-align: center; /* Centraliza os títulos h2 e h3 */
+        }
+        p {
+            line-height: 1.6; /* Para melhorar a legibilidade */
+            text-align: justify; /* Justifica o texto dentro dos parágrafos */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #000000;
+  background-color: #faa780; /* Cor do botão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-button:hover {
+    background-color: #86372d;
+    transform: translateY(-3px); /* Efeito de elevação no hover */
+}
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .content {
+                padding: 15px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selagem</h1>
+        </header>
+        <div class="content">
+            <h2>Renove Seus Fios com a Selagem de Cabelo!
+            </h2>
+
+            <p>Deseja cabelos sedosos, sem frizz e com brilho radiante? A selagem de
+                 cabelo é o tratamento ideal para transformar sua rotina
+                  capilar e realçar sua beleza!</p>
+
+            <h3>O que é a Selagem?</h3>
+
+            <p>A selagem de cabelo é um procedimento avançado que atua na estrutura dos fios, 
+                promovendo o alinhamento das cutículas e a eliminação do frizz. 
+                Perfeita para todos os tipos de cabelo, a selagem traz um efeito
+                liso e saudável, além de facilitar o dia a dia na hora de estilizar!</p>
+
+            <h3>Como Funciona?</h3>
+
+            <p>Durante a aplicação, um produto especial é utilizado para envolver cada fio,
+                criando uma película protetora que mantém a umidade e os nutrientes.
+                 O calor da prancha é utilizado para potencializar o efeito,
+                  resultando em cabelos extremamente lisos, macios e com um brilho
+                 deslumbrante. Você vai se surpreender com a leveza e o movimento dos seus
+                  fios!</p>
+
+            <h3>Cuidados Pós-Procedimento</h3>
+            <p>Para garantir que sua selagem dure por mais tempo e que seus cabelos 
+                continuem lindos, 
+                é essencial seguir algumas dicas de cuidados:
+             </p>
+             <li>Evite lavar o cabelo nas primeiras 72 horas :
+                 Isso é fundamental para a fixação do tratamento.</li>
+             <br>
+             <li>Use produtos adequados : Opte por shampoos e condicionadores 
+                sem sulfato e parabenos para não comprometer a selagem.</li>
+             <br>
+             <li>Minimize o uso de calor : Reduza o uso de secadores e chapinhas 
+                para preservar a saúde dos fios.</li>
+             <br>
+             <li>Hidrate regularmente: Aplique máscaras hidratantes para manter a maciez e o brilho dos cabelos.</li>
+             <br>
+<h3>Pronta para revelar todo o potencial dos seus fios? Agende sua selagem de cabelo conosco e experimente
+     a sensação de cabelos deslumbrantes e saudáveis! Você merece esse cuidado!</h3>        
+
+
+
+        </div>
+        <button class="cta-button" onclick="openWhatsApp()">
+            <i class="fas fa-calendar-alt"></i> Marque sua Selagem e redescubra seus fios!
+        </button> 
+    </div>
+    <script>
+        function openWhatsApp() {
+            const phoneNumber = "5532984560451"; // Substitua pelo seu número do WhatsApp
+            const message = encodeURIComponent("Olá Rodrigo, gostaria de agendar um horário no salão."); // Mensagem pré-definida
+            const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            window.open(url, '_blank'); // Abre o WhatsApp em uma nova aba
+        }
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Ferreira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Rodrigo Ferreira Studio</h1>
+            <p>Transformamos sua beleza todos os dias!</p>
+            <button class="cta-button" onclick="openWhatsApp()">
+                <i class="fas fa-calendar-alt"></i> Agende agora!
+            </button>            
+        </div>
+    </header>
+
+    <!-- Serviços na Página Principal -->
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        
+        <a href="progressiva.html" class="service-item">
+            <h3>Progressiva</h3>
+            <p>Transforme seus cabelos com a nossa progressiva de longa duração, que garante fios lisos, macios e com brilho intenso.</p>
+        </a>
+        
+        <a href="selagem.html" class="service-item">
+            <h3>Selagem</h3>
+            <p>Selagem capilar que reconstrói e sela as cutículas dos fios, proporcionando um visual saudável e alinhado.</p>
+        </a>
+        
+        <a href="botox.html" class="service-item">
+            <h3>Botox Capilar</h3>
+            <p>Rejuvenesça seus cabelos! O Botox Capilar é perfeito para restaurar a vitalidade e eliminar o frizz.</p>
+        </a>
+        
+        <a href="escova.html" class="service-item">
+            <h3>Escova</h3>
+            <p>Escova modeladora que deixa seus cabelos com movimento e brilho, prontos para qualquer ocasião.</p>
+        </a>
+    </section>
+    
+  
+    <!-- Galeria de Imagens -->
+    <section class="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+            <img src="./assids/1000023522.jpg" alt="Progressiva - Antes e Depois">
+            <img src="./assids/1000023523.jpg" alt="Selagem - Resultado Final">
+            <img src="./assids/1000023524.jpg" alt="Botox Capilar - Resultado">
+            <img src="./assids/1000023581.jpg" alt="Escova - Antes e Depois">
+        </div>
+    </section>
+
+    <!-- Modal para Exibir Imagens Ampliadas -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagem ampliada">
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function openWhatsApp() {
+            const phoneNumber = "5532984560451"; // Substitua pelo seu número do WhatsApp
+            const message = encodeURIComponent("Olá Rodrigo, gostaria de agendar um horário no salão."); // Mensagem pré-definida
+            const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            window.open(url, '_blank'); // Abre o WhatsApp em uma nova aba
+        }
+
+        // Função para abrir o modal com a imagem clicada
+        document.querySelectorAll(".gallery-grid img").forEach(img => {
+            img.addEventListener("click", function () {
+                document.getElementById("imageModal").style.display = "flex";
+                document.getElementById("modalImage").src = this.src;
+            });
+        });
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

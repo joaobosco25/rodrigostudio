@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Inclua seu CSS -->
+    <title>Progressiva</title>
+    <style>
+        body {
+            background-image: url('./assids/freepik__candid-image-photography-natural-textures-highly-r__6440.jpeg'); /* Insira o caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            color: #fffdfd;
+            font-family: 'Darker Grotesque', sans-serif; /* Ajuste a fonte como preferir */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center; /* Centraliza o texto por padrão */
+        }
+        header {
+            background: rgba(0, 0, 0, 0.308); /* Fundo semi-transparente para o cabeçalho */
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.404); /* Fundo semi-transparente para o conteúdo */
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centraliza o texto dentro do contêiner */
+        }
+        h2, h3 {
+            text-align: center; /* Centraliza os títulos h2 e h3 */
+        }
+        p {
+            line-height: 1.6; /* Para melhorar a legibilidade */
+            text-align: justify; /* Justifica o texto dentro dos parágrafos */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #000000;
+  background-color: #faa780; /* Cor do botão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-button:hover {
+    background-color: #86372d;
+    transform: translateY(-3px); /* Efeito de elevação no hover */
+}
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .content {
+                padding: 15px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tratamento de Progressiva</h1>
+        </header>
+        <div class="content">
+            <h2>O que é a Progressiva?</h2>
+            <p>A progressiva é um tratamento capilar que alisa os fios, eliminando o frizz e deixando o cabelo com um aspecto mais liso e saudável. O procedimento utiliza produtos químicos que penetram na fibra capilar, alterando a estrutura do cabelo para torná-lo mais liso.</p>
+            <h3>Como Funciona?</h3>
+            <p>O processo de aplicação da progressiva envolve várias etapas, incluindo a lavagem, a aplicação do produto alisante e a secagem. É importante que o procedimento seja realizado por um profissional capacitado, que saberá qual a melhor técnica e produto a ser utilizado para cada tipo de cabelo.</p>
+            <h3>Cuidados Pós-Procedimento</h3>
+            <p>Após realizar a progressiva, é fundamental seguir algumas recomendações para manter os fios saudáveis. Isso inclui o uso de shampoos sem sulfato, hidratações regulares e evitar a exposição excessiva ao sol.</p>
+        </div>
+        <button class="cta-button" onclick="openWhatsApp()">
+            <i class="fas fa-calendar-alt"></i> Marque sua Progressiva conosco!
+        </button> 
+    </div>
+    <script>
+        function openWhatsApp() {
+            const phoneNumber = "5532984560451"; // Substitua pelo seu número do WhatsApp
+            const message = encodeURIComponent("Olá Rodrigo, gostaria de agendar um horário no salão, para uma progressiva."); // Mensagem pré-definida
+            const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            window.open(url, '_blank'); // Abre o WhatsApp em uma nova aba
+        }
+    </script>
+</body>
+</html>
+
+
+
+

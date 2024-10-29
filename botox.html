@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Inclua seu CSS -->
+    <title>Botox Capilar</title>
+    <style>
+        body {
+            background-image: url('./assids/botox.jpeg'); /* Insira o caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            color: #fffdfd;
+            font-family: 'Darker Grotesque', sans-serif; /* Ajuste a fonte como preferir */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center; /* Centraliza o texto por padrão */
+        }
+        header {
+            background: rgba(0, 0, 0, 0.308); /* Fundo semi-transparente para o cabeçalho */
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.404); /* Fundo semi-transparente para o conteúdo */
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centraliza o texto dentro do contêiner */
+        }
+        h2, h3 {
+            text-align: center; /* Centraliza os títulos h2 e h3 */
+        }
+        p {
+            line-height: 1.6; /* Para melhorar a legibilidade */
+            text-align: justify; /* Justifica o texto dentro dos parágrafos */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #000000;
+  background-color: #faa780; /* Cor do botão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-button:hover {
+    background-color: #86372d;
+    transform: translateY(-3px); /* Efeito de elevação no hover */
+}
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .content {
+                padding: 15px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Botox Capilar</h1>
+        </header>
+        <div class="content">
+            <h2>Revitalize Seus Fios com o Botox Capilar!                !
+            </h2>
+
+            <p>Quer ter cabelos radiantes, macios e livres de frizz?
+                 O botox capilar é o tratamento
+                 perfeito para transformar seus fios e devolver toda a sua vitalidade!</p>
+
+            <h3>O que é a Botox Capilar e qual sua diferença?</h3>
+
+            <p>O botox capilar é um procedimento inovador que repara profundamente a fibra 
+                capilar, promovendo um efeito rejuvenescedor. Ideal para cabelos danificados,
+                ressecados ou sem vida, esse tratamento 
+                preenche as fissuras e danos dos fios, deixando-os revitalizados e com um 
+                brilho intenso.</p>
+
+            <h3>Como Funciona?</h3>
+
+            <p>Durante a aplicação, uma fórmula rica em ativos, como colágeno,
+                 aminoácidos e vitaminas, é distribuída nos cabelos. O produto penetra
+                  na estrutura dos fios, proporcionando hidratação profunda e maciez.
+                   O resultado? Cabelos alinhados, macios e com movimento 
+                natural. É a solução perfeita para quem busca praticidade e beleza no dia
+                 a dia!</p>
+
+            <h3>Cuidados Pós-Procedimento</h3>
+            <p>Para manter o efeito do botox capilar por mais tempo e 
+                garantir que seus cabelos continuem deslumbrantes, siga essas dicas 
+                de cuidados:
+             </p>
+             <li>Evite lavar o cabelo nas primeiras 48 horas :
+                Isso ajuda a fixar o tratamento nos fios.</li>
+             <br>
+             <li>Escolha produtos específicos: Utilize shampoos e condicionadores
+                 livres de sulfato e parabenos para preservar a hidratação.</li>
+             <br>
+             <li>Hidrate-se regularmente: Máscaras e tratamentos
+                 nutritivos são essenciais para manter os fios saudáveis.</li>
+             <br>
+             <li>Evite o calor excessivo : Tente limitar o uso de
+                 secadores e chapinhas para não agredir os fios.</li>
+             <br>
+<h3>Pronta para dar uma nova vida aos seus cabelos? Agende seu botox capilar conosco e descubra a sensação de fios lindos,
+     saudáveis e cheios de vida! Você merece esse cuidado!</h3>        
+
+
+
+        </div>
+        <button class="cta-button" onclick="openWhatsApp()">
+            <i class="fas fa-calendar-alt"></i> Marque sua seçao de Botox Capilar e descubra o potencial e a vida de seus fios!
+        </button> 
+    </div>
+    <script>
+        function openWhatsApp() {
+            const phoneNumber = "5532984560451"; // Substitua pelo seu número do WhatsApp
+            const message = encodeURIComponent("Olá Rodrigo, gostaria de agendar um horário no salão."); // Mensagem pré-definida
+            const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+            window.open(url, '_blank'); // Abre o WhatsApp em uma nova aba
+        }
+    </script>
+</body>
+</html>
+
+
+
+
