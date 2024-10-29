@@ -1,6 +1,13 @@
-![Version](https://img.shields.io/github/v/tag/seu_usuario/seu_repositorio?label=version)
+![Version](https://img.shields.io/github/v/tag/joaobosco25/rodrigostudio?label=version)
 
-![Rodrigo Ferreira Studio](./assids/freepik__candid-image-photography-natural-textures-highly-r__6439.jpeg)
+## Linguagens do Projeto
+
+| Linguagem  | Percentual Usado |
+|------------|------------------|
+| ![HTML](https://img.shields.io/badge/-HTML-ff751a?style=flat-square&logo=html5&logoColor=white) | 50% |
+| ![CSS](https://img.shields.io/badge/-CSS-44b2fb?style=flat-square&logo=css3&logoColor=white) | 30% |
+| ![JavaScript](https://img.shields.io/badge/-JavaScript-fcdc00?style=flat-square&logo=javascript&logoColor=black) | 20% |
+
 
 # Rodrigo Ferreira Studio
 
@@ -45,13 +52,7 @@ dos links abaixo:
 - [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jo%C3%A3o-bosco-ferreira-2a6b46225/)
 - [![WhatsApp](https://img.shields.io/badge/-WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/+5532984560451)
 
-## Linguagens do Projeto
 
-| Linguagem  | Percentual Usado |
-|------------|------------------|
-| ![HTML](https://img.shields.io/badge/-HTML-ff751a?style=flat-square&logo=html5&logoColor=white) | 50% |
-| ![CSS](https://img.shields.io/badge/-CSS-44b2fb?style=flat-square&logo=css3&logoColor=white) | 30% |
-| ![JavaScript](https://img.shields.io/badge/-JavaScript-fcdc00?style=flat-square&logo=javascript&logoColor=black) | 20% |
 
 
 
