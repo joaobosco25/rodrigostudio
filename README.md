@@ -1,5 +1,3 @@
-![Version](https://img.shields.io/github/v/tag/joaobosco25/rodrigostudio?label=version)
-
 ## Linguagens do Projeto
 
 | Linguagem  | Percentual Usado |
